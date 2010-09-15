@@ -2,4 +2,7 @@
 <resources>
     <string name="hello">Hello World, MainActivity!</string>
     <string name="app_name">PhoneZ</string>
+
+    <string name="dialog_call_question">Do you really want to call %s?</string>
+    <string name="dialog_sms_question">Do you really want to write SMS to %s?</string>
 </resources>

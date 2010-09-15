@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+
+    <declare-styleable name="RecentBox">
+        <!-- Defines header's text. -->
+        <attr name="headerText" format="string" />
+        <!-- Defines header's text size. -->
+        <attr name="headerTextSize" format="dimension" />
+        <!-- Defines maximum recent items. -->
+        <attr name="maxRecentItems" format="integer" />
+    </declare-styleable>
+</resources>
