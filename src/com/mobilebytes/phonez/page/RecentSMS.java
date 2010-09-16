@@ -1,16 +1,16 @@
 package com.mobilebytes.phonez.page;
 
-import java.text.SimpleDateFormat;
+
 import java.util.ArrayList;
-import java.util.Date;
+
 import java.util.List;
-import java.util.TimeZone;
+
 
 import android.app.AlertDialog;
-import android.content.BroadcastReceiver;
+
 import android.content.ComponentName;
 import android.content.ContentResolver;
-import android.content.ContentValues;
+
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -44,21 +44,21 @@ import android.widget.ImageView.ScaleType;
 
 import com.mobilebytes.phonez.R;
 
-import com.mobilebytes.phonez.page.RecentSMS.AppsAdapter.Component;
+
 import com.mobilebytes.phonez.page.RecentSMS.PeopleAdapter.Person;
 import com.mobilebytes.phonez.providers.ApplicationContentProvider;
 import com.mobilebytes.phonez.widget.RecentBox;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class RecentSMS.
+ */
 public class RecentSMS extends Page {
 
 	/** The SM s_ conten t_ uri. */
 	private Uri smsContentUri = Uri.parse("content://sms");
 
-	/** The m date. */
-	private TextView mDate;
 
-	/** The m format. */
-	private SimpleDateFormat mFormat;
 
 	/** The m resolver. */
 	private ContentResolver mResolver;
@@ -83,16 +83,12 @@ public class RecentSMS extends Page {
 		mPackageManager = context.getPackageManager();
 		inflate(context, R.layout.smss, this);
 		setBackgroundColor(0xff448243);
-		//mDate = (TextView) findViewById(R.id.date);
-		//mFormat = new SimpleDateFormat("EEE dd-MMM hh:mm");
-        //Date date = new Date();
-        //mDate.setText(mFormat.format(date));
+
 
 		IntentFilter filter = new IntentFilter();
         filter.addAction(Intent.ACTION_TIME_TICK);
         filter.addAction(Intent.ACTION_TIME_CHANGED);
         filter.addAction(Intent.ACTION_TIMEZONE_CHANGED);
-        //context.registerReceiver(mTimeIntentReceiver, filter);
 
 
         mResolver = context.getContentResolver();
@@ -124,13 +120,13 @@ public class RecentSMS extends Page {
 
 	}
 
-	// TODO check if its good place to unregisterReceiver
+
 	/* (non-Javadoc)
 	 * @see android.view.View#onDetachedFromWindow()
 	 */
 	@Override
 	protected void onDetachedFromWindow() {
-		//getContext().unregisterReceiver(mTimeIntentReceiver);
+
 		super.onDetachedFromWindow();
 	}
 

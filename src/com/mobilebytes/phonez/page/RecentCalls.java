@@ -48,15 +48,14 @@ import com.mobilebytes.phonez.page.RecentCalls.PeopleAdapter.Person;
 import com.mobilebytes.phonez.providers.ApplicationContentProvider;
 import com.mobilebytes.phonez.widget.RecentBox;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class RecentCalls.
+ */
 public class RecentCalls extends Page {
 
 
 
-	/** The m date. */
-	private TextView mDate;
-
-	/** The m format. */
-	private SimpleDateFormat mFormat;
 
 	/** The m resolver. */
 	private ContentResolver mResolver;

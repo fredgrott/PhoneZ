@@ -1,4 +1,4 @@
-
+![PhoneZ](http://github.com/shareme/PhoneZ/raw/master/screenshots/phonez_screen.png)
 # Project Name
 
 PhoneZ is an android application UI experiment whereas I explore a different
@@ -38,6 +38,11 @@ The project is licensed under Apache License 2 and the text can be found at:
 [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
 
 # Usage
+
+You can download the apk via QR or http and should see your previous SMS or
+calls if you made some in UI pages...
+
+# Notes
 
 
 # Credits
